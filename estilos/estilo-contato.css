@@ -1,0 +1,432 @@
+/* ==========================
+RESET E ESTILOS GLOBAIS
+========================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+  }
+  cen
+  * {
+  box-sizing: border-box;
+  }
+  
+  /* ==========================
+  HEADER FIXO
+  ========================== */
+  .topo-cashwise {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  background-color: #10A5C6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  }
+  
+  .lado-esquerdo {
+  display: flex;
+  align-items: center;
+  }
+  
+  .logo-cash {
+  height: 250px;
+  width: 300px;
+  object-fit: contain;
+  }
+  
+  .menu-navegacao {
+  display: flex;
+  height: 100%;
+  }
+  
+  .link-menu {
+  color: white;
+  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  }
+  
+  .link-menu + .link-menu {
+  border-left: 1px solid #e0e0e0;
+  }
+  
+  .link-menu:hover {
+  background-color: white;
+  color: #10A5C6;
+  }
+  
+  .icones-direita {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 30px;
+  }
+  
+  .icone-svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+  }
+  
+  /* ==========================
+  MENU 3 PONTINHOS
+  ========================== */
+    .menu-pontinhos {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .menu-suspenso {
+      position: fixed;
+      top: 71px;
+      right: 1px;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+      z-index: 200;
+      border-radius: 8px;
+      padding: 10px 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      display: none;
+    }
+    
+    .menu-suspenso.mostrar {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+      animation: fadeIn 0.3s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .menu-suspenso a {
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Lexend';
+      font-weight: 400;
+    }
+    
+    .menu-suspenso a:hover {
+      background-color: #10A5C6;
+      color: white;
+    }
+  
+  /* ==========================
+  CONTEÚDO PRINCIPAL
+  ========================== */
+  main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px 20px;
+  }
+  
+  .container {
+  width: 100%;
+  padding: 10px 20px;
+  }
+  
+  a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+  }
+  /* Blocos de contato */
+  .bloco {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+  }
+  
+  .chat .icone,
+  .telefone .icone {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #10A5C6;
+  }
+  
+  .chat-titulo,
+  .telefone-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+  /* formulário*/
+  .formulario-contato {
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .campo-form {
+    margin-bottom: 20px;
+  }
+  
+  .campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1032C7;
+  }
+  
+  .campo-form input,
+  .campo-form textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .botao-enviar {
+    background-color: #10A5C6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-enviar:hover {
+    background-color: #0e8aad;
+  }
+  
+  
+  /*email*/
+  
+  
+  .texto-opcao {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  }
+  
+  .email-card {
+  margin-top: 1rem;
+  background-color: #f0faff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border-left: 5px solid #10A5C6;
+  display: inline-block;
+  }
+  
+  .email-label {
+  font-weight: bold;
+  color: #1032C7;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  }
+  
+  .email-address {
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Courier New', monospace;
+  }
+  
+  .numeros {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+  
+  .numero-grande {
+  color: #8000c7;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  
+  .descricao {
+  font-size: 20px;
+  color: #333;
+  }
+  
+  /* Redes Sociais */
+  .redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  gap: 40px;
+  }
+  
+  .info-redes {
+  flex: 1;
+  min-width: 300px;
+  }
+  
+  .info-redes h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  }
+  
+  .info-redes p {
+  font-size: 18;
+  color: #333;
+  margin-bottom: 12px;
+  }
+  
+  .aviso strong {
+  color: #000;
+  }
+  
+  .botoes-redes {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 16px;
+  min-width: 300px;
+  }
+  
+  .botao-rede {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+  }
+  
+  .botao-rede:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icone-rede {
+  font-size: 20px;
+  }
+  
+  .instagram { color: #E1306C; }
+  .twitter { color: #1DA1F2; }
+  .linkedin { color: #0077B5; }
+  .youtube { color: #FF0000; }
+  
+  /* ==========================
+  RODAPÉ
+  ========================== */
+  .footer {
+  background-color: #f4f4f4;
+  padding: 60px 40px 20px;
+  color: #1a1a1a;
+  }
+  
+  .footer-links {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  }
+  
+  .footer-column {
+  min-width: 180px;
+  margin: 10px;
+  }
+  
+  .footer-column h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+  list-style: none;
+  padding: 0;
+  }
+  
+  .footer-column li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+  }
+  
+  .footer-column li:hover {
+  color: #10A5C6;
+  }
+  
+  .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  }
+  
+  .logo-cash-rodape {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  }
+  
+  .footer-logo p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  }
+  
+  .footer-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
+  }
+  
+  .footer-icons svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  }
+  
+  .footer-icons svg:hover {
+  transform: scale(1.1);
+  color: #10A5C6;
+  }

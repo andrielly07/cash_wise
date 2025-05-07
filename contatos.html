@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatos | CashWise</title>
+  <link rel="stylesheet" href="../estilos/estilo-contato.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const botaoMenu = document.getElementById("botao-menu");
+      const menu = document.getElementById("menu-suspenso");
+
+      document.addEventListener("mousedown", function (e) {
+        if (!menu.contains(e.target) && !botaoMenu.contains(e.target)) {
+          menu.classList.remove("mostrar");
+        }
+      });
+
+      botaoMenu.addEventListener("click", function () {
+        menu.classList.toggle("mostrar");
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topo-cashwise">
+    <div class="lado-esquerdo">
+      <img src="../img/logocash.png" alt="Logo CashWise" class="logo-cash" />
+    </div>
+
+    <div class="icones-direita">
+      <nav class="menu-navegacao">
+        <a href="index.html" class="link-menu">Página Inicial</a>
+        <a href="Sobre.html" class="link-menu">Sobre Nós</a>
+        <a href="produtos-servicos.html" class="link-menu">Produtos e Serviços</a>
+        <a href="#contato" class="link-menu">Contato</a>
+      </nav>
+
+      <svg class="icone-svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+
+      <div class="menu-pontinhos">
+        <button id="botao-menu" style="background: none; border: none; cursor: pointer;">
+          <svg class="icone-svg" viewBox="0 0 24 24" fill="white">
+            <circle cx="5" cy="12" r="2" />
+            <circle cx="12" cy="12" r="2" />
+            <circle cx="19" cy="12" r="2" />
+          </svg>
+        </button>
+
+        <div id="menu-suspenso" class="menu-suspenso">
+          <a href="#intro">Início</a>
+          <a href="#endereco">Endereço</a>
+          <a href="#info">Mais Informações</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container" id = "intro">
+      <h1 class="titulo">Canais principais</h1>
+      <p class="descricao">Fale conosco pelo chat no app CahWise, disponível 24 horas por dia.</p>
+
+      <div class="bloco chat">
+        <div class="chat-titulo">
+          <div class="icone">💬</div>
+          <p class="texto-opcao">Precisa de uma ajuda agora?</p>
+        </div>
+        <p class="descricao">Entre em contato com nosso atendimento através do e-mail.</p>
+        <div class="email-card">
+          <span class="email-label">Email:</span>
+          <span class="email-address">cashwise-etec@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="bloco telefone">
+        <div class="telefone-titulo">
+          <div class="icone">📞</div>
+          <p class="texto-opcao">Se preferir, ligue:</p>
+        </div>
+        <div class="numeros">
+          <div class="numero">
+            <span class="numero-grande">4020 0185</span><br>
+            <span class="descricao"> Capitais e Regiões metropolitanas</span>
+          </div>
+          <div class="numero">
+            <span class="numero-grande">0800 591 2117</span><br>
+            <span class="descricao"> Demais localidades</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bloco endereco" id = "endereco">
+        <div class="telefone-titulo">
+          <div class="icone">📍</div>
+          <p class="texto-opcao">Nosso endereço:</p>
+        </div>
+        <span class="descricao">Rua Vírginia Ferni, 400 - São Paulo, SP - 08253-000</span>
+        <div class="mapa" style="margin-top: 16px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8458372764824!2d-46.6021606!3d-23.5012524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eea7a9e2e67%3A0x2268d7a18e063f64!2sRua%20V%C3%ADrginia%20Ferni%2C%20400%20-%20Jardim%20Imperador%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003402-001!5e0!3m2!1spt-BR!2sbr!4v1686011229817!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="bloco endereco">
+        <p class="texto-opcao">Fale com a gente</p>
+        <form class="formulario-contato">
+          <div class="campo-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="campo-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="campo-form">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="botao-enviar">Enviar</button>
+        </form>
+      </div>
+
+      <section class="redes-sociais">
+        <div class="info-redes">
+          <h2>Redes sociais CashWise</h2>
+          <p>Siga a CashWise nas redes sociais e fique por dentro de todas as novidades do nosso app.</p>
+          <p class="aviso"><strong>Verifique sempre o selo oficial das nossas redes!</strong></p>
+        </div>
+
+        <div class="botoes-redes">
+            <a href="#" class="botao-rede instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="botao-rede twitter"><i class="fab fa-x-twitter"></i> Twitter</a>
+            <a href="#" class="botao-rede linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" class="botao-rede youtube"><i class="fab fa-youtube"></i> YouTube</a>            
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="info">
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li>Home</li>
+          <li>Blog</li>
+          <li>CashWise News</li>
+          <li>Carreiras</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>CashWise</h4>
+        <ul>
+          <li>Sobre Nós</li>
+          <li>Ajuda</li>
+          <li>Contato</li>
+          <li>Política de Privacidade</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Produtos</h4>
+        <ul>
+          <li>Planejamento Financeiro</li>
+          <li>Gestão de Gastos</li>
+          <li>Educação Financeira</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="../img/locash-rodape.png" alt="Logo CashWise" class="logo-cash-rodape">
+        <p>© 2025 CashWise Tecnologia Financeira LTDA. CNPJ: 00.000.000/0001-00<br>Rua da Virgínia Ferni, 400 - São Paulo, SP - 08253-000</p>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>      
+    </div>
+  </footer>
+
+</body>
+</html>
