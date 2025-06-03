@@ -1,146 +1,20 @@
-body {
-    background-color: #f9f9f9;
-    padding-top: 70px; /* mesmo valor da altura do topo */
-  }
-  
-  .topo-cashwise {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    height: 70px;
-    width: 100vw;
-    background-color: #10A5C6;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
-  
-  .menu-navegacao {
-    display: flex;
-    height: 100%;
-  }
-  
-  .link-menu {
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  .link-menu + .link-menu {
-    border-left: 1px solid #e0e0e0;
-  }
-  
-  .link-menu:hover {
-    background-color: white;
-    color: #10A5C6;
-  }
-  
-  .lado-esquerdo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-cash {
-    height: 250px;
-    width: 300px;
-    object-fit: contain;
-  }
-  
-  .icones-direita {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 1.5rem;
-    color: white;
-    white-space: nowrap;
-    font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
-    padding-right: 30px;
-  }
-  
-  .header-centro {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* Menu de três pontos */
-  .menu-pontinhos {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .icone-svg {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  
-  /* Checkbox invisível para controle do menu */
-  .menu-toggle {
-    display: none;
-  }
-  
-  /* Estilo do menu suspenso */
-  .menu-suspenso {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    right: 1px;
-    top: 71px;
-    min-width: 160px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    z-index: 200;
-    padding: 10px 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .menu-suspenso.active {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-    animation: fadeIn 0.3s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .menu-suspenso a {
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: block;
-    font-family: 'Lexend';
-    font-weight: 400;
-  }
-  
-  .menu-suspenso a:hover {
-    background-color: #10A5C6;
-    color: white;
-  }
-  
-  .divisoria-menu {
-    width: 1px;
-    height: 70px;
-    background-color: white;
-    display: inline-block;
-  }
- 
+/* ==========================
+   GLOBAL E RESET GERAL
+========================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
   .bancos-section {
     background-color: #d9d9d9;
-    padding: 60px 20px;
+    padding: 110px 0 30px;
   }
   
   .bancos-container {
@@ -175,17 +49,6 @@ body {
     color: #333333;
   }
   
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #111827;
-  }
   
   .aprendizado-section {
     background-color: #f3f4f6;
@@ -256,24 +119,10 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background-color: #f9f9f9;
-  }
-  
   .hero {
     background: linear-gradient(to bottom, #e5f7ff, #ffffff);
     text-align: center;
-    padding: 60px 20px;
+    padding: 110px 0 30px;
   }
   
   .hero h1 {
@@ -360,140 +209,5 @@ body {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  /* ==========================
-     RODAPÉ
-  ========================== */
-  .footer {
-    background-color: #f4f4f4;
-    padding: 60px 40px 20px;
-    color: #1a1a1a;
-    font-family: "Inter", sans-serif;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #dcdcdc;
-    padding-bottom: 40px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .logo-cash-rodape {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 10px;
-    margin-left: -10px;
-  }
-  
-  .footer-column {
-    min-width: 180px;
-    margin: 10px;
-  }
-  
-  .footer-column h4 {
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  
-  .footer-column li:hover {
-    color: #10A5C6;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-  }
-  
-  .footer-logo {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-  
-  .footer-logo strong {
-    font-size: 20px;
-  }
-  
-  .footer-logo p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .footer-icons {
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
-    color: black;
-    margin-top: 10px;
-  }
-  
-  .footer-icons img {
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .footer-icons img:hover {
-    transform: scale(1.1);
-    color: #10A5C6;
-  }
-
-  .carousel-imagem img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-  }
-  
-  .carousel-imagem img:hover {
-    transform: scale(1.02);
-  }
-  
-  .carousel-indicadores button {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .carousel-indicadores button:hover {
-    transform: scale(1.2);
-  }
-  
-  .footer-icons img {
-    width: 28px;
-    height: 28px;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .footer-icons img:hover {
-    transform: scale(1.15);
-  }
-  
+ 
   
