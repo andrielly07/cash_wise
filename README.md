@@ -1,8 +1,61 @@
-# CashWise
- 💼 **TCC** – Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (TCC) com o tema **"Gestão Financeira para Jovens"**. O projeto tem como objetivo oferecer uma solução simples, acessível e educativa para ajudar jovens a organizarem melhor suas finanças pessoais. 
- 
- 🧾 **Objetivos do Projeto** - Promover a educação financeira entre jovens e estudantes.  Auxiliar no controle de gastos e receitas de forma intuitiva.  Estimular o planejamento financeiro e a criação de metas.  Desenvolver uma aplicação mobile e um site institucional com interface amigável e responsiva.  
- 
- ⚙️ **Tecnologias utilizadas** - [HTML, CSS, JavaScript, React.js, Flutter, Dart, Firebase]  
- 
- 📌 **Funcionalidades principais** - Ainda em discussão.
+# 💼 CashWise
+
+💸 **CashWise** é um projeto desenvolvido como **Trabalho de Conclusão de Curso (TCC)** com foco em **Gestão Financeira para Jovens**.
+
+A ideia é simples: ajudar jovens a organizarem melhor o próprio dinheiro de forma **fácil, visual e sem complicação**. Nada de termos difíceis ou planilhas confusas — aqui, finanças são descomplicadas 😌📊
+
+---
+
+## 🎯 Objetivos do Projeto
+
+✨ Nosso objetivo com o CashWise é:
+
+- Incentivar a **educação financeira** desde cedo  
+- Facilitar o **controle de gastos e receitas**  
+- Ajudar no **planejamento financeiro** e na criação de metas  
+- Desenvolver um **aplicativo mobile** e um **site institucional** com interface moderna, jovem e responsiva  
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+🚀 Tecnologias usadas no desenvolvimento do projeto:
+
+- HTML  
+- CSS  
+- JavaScript  
+- React.js  
+- Flutter  
+- Dart  
+- Firebase  
+
+---
+
+## 📌 Funcionalidades
+
+🧠 Funcionalidades pensadas para o dia a dia:
+
+- Registro de gastos e receitas  
+- Organização financeira por categorias  
+- Visualização simples e intuitiva do orçamento  
+
+> 🔧 *O projeto ainda está em desenvolvimento, então novas funcionalidades serão adicionadas futuramente.*
+
+---
+
+## 👥 Equipe do Projeto
+
+💙 O CashWise é desenvolvido por um grupo de estudantes que acredita que educação financeira também pode ser simples e acessível.
+
+Integrantes do projeto (ordem alfabética):
+
+- Andrielly  
+- Diego  
+- Isaac  
+- Juciléia  
+- Maria Eduarda  
+- Marina  
+
+---
+
+✨ *CashWise — cuidando do seu dinheiro do jeito certo, desde cedo.*
