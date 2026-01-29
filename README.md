@@ -39,8 +39,6 @@ A ideia é simples: ajudar jovens a organizarem melhor o próprio dinheiro de fo
 - Organização financeira por categorias  
 - Visualização simples e intuitiva do orçamento  
 
-> 🔧 *O projeto ainda está em desenvolvimento, então novas funcionalidades serão adicionadas futuramente.*
-
 ---
 
 ## 👥 Equipe do Projeto
