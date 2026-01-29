@@ -23,8 +23,7 @@ A ideia é simples: ajudar jovens a organizarem melhor o próprio dinheiro de fo
 
 - HTML  
 - CSS  
-- JavaScript  
-- React.js  
+- JavaScript   
 - Flutter  
 - Dart  
 - Firebase  
