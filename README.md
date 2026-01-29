@@ -45,7 +45,7 @@ A ideia é simples: ajudar jovens a organizarem melhor o próprio dinheiro de fo
 
 💙 O CashWise é desenvolvido por um grupo de estudantes que acredita que educação financeira também pode ser simples e acessível.
 
-Integrantes do projeto (ordem alfabética):
+Integrantes do projeto:
 
 - Andrielly  
 - Diego  
