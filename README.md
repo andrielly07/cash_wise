@@ -55,4 +55,4 @@ Integrantes do projeto:
 
 ---
 
-✨ *CashWise —  desde cedo cuidando do seu dinheiro do jeito certo!*
+✨ *CashWise — cuidando do seu dinheiro do jeito certo, desde cedo.*
