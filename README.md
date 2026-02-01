@@ -56,3 +56,4 @@ Integrantes do projeto:
 ---
 
 ✨ *CashWise — cuidando do seu dinheiro do jeito certo, desde cedo.*
+💙 *Acesse nosso site em:* cash-wise.netlify.app
