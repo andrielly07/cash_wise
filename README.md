@@ -1,6 +1,6 @@
 # 💼 CashWise
 
-💸 **CashWise** é um projeto desenvolvido como **Trabalho de Conclusão de Curso (TCC)** com foco em **Gestão Financeira para Jovens**.
+💸 **CashWise** é um projeto desenvolvido como **Trabalho de Conclusão de Curso (TCC)** com foco em **Gestão Financeira para Jovens**. *Acesse nosso site em:* cash-wise.netlify.app
 
 A ideia é simples: ajudar jovens a organizarem melhor o próprio dinheiro de forma **fácil, visual e sem complicação**. Nada de termos difíceis ou planilhas confusas — aqui, finanças são descomplicadas 😌📊
 
@@ -55,4 +55,4 @@ Integrantes do projeto:
 
 ---
 
-✨ *CashWise — cuidando do seu dinheiro do jeito certo, desde cedo.*
+✨ *CashWise —  desde cedo cuidando do seu dinheiro do jeito certo!*
